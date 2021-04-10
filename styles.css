@@ -400,24 +400,24 @@ main {
   filter: invert(29%) sepia(1%) saturate(2590%) hue-rotate(320deg) brightness(100%) contrast(91%);
 }
 
-@media only screen and (max-device-width: 480px) {
+@media screen and (max-width: 780px) {
+  nav>ul {
+    flex-direction: column;
+    height: 5em;
+    margin: 0 0 1em .1em;
+  }
 
- nav>ul {
-   flex-direction: column;
-   height: 5em;
-   margin: 0 0 1em .1em;
- }
+  li>img {
+    width: 1em;
+    margin: .1em .5em;
+  }
 
- li>img {
-   width: 1em;
-   margin: .1em .5em;
- }
+  .admin-wrapper {
+    justify-content: center;
+    transform: translateX(2em);
+  }
 
- .admin-wrapper {
-   justify-content: center;
-   transform: translateX(2em);
- }
- .profile-wrapper>img {
-   transform: scale(.5) translateX(8em);
- }
+  .profile-wrapper>img {
+    transform: scale(.5) translateX(8em);
+  }
 }
